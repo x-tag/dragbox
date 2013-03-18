@@ -1,7 +1,8 @@
 {	
 	"name": "Dragbox",
 	"tagName": "x-dragbox",
-	"version": "0.1.0",	
+	"version": "0.1.0",
+	"author": "David Walsh", 
 	"description": "",
 	"images": [],	
 	"categories": ["structural"],
