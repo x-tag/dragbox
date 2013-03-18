@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Dragbox Demo - X-Tag</title>
+    <link rel="stylesheet" type="text/css" href="x-tag-components.css"/>
+	<link rel="stylesheet" type="text/css" href="../src/dragbox.css"/>
+
+    <script type="text/javascript" src="x-tag-components.js"></script> 
+    <script type="text/javascript" src="../src/dragbox.js"></script>      
+	<style>
+		#dragbox div {
+			color: #fff;
+			font-size: 200%;
+			font-weight: bold;
+		}
+
+		x-dragbox {
+			border: 1px solid #ccc;
+			margin-bottom: 20px;
+		}
+
+		div, li {
+			display: inline-block;
+			width: 100px;
+			height: 100px;
+			margin: 20px;
+			background: red;
+			border: 2px solid #fff;
+		}
+
+		ul { 
+			list-style-type: none; 
+			padding: 0;
+			margin: 0;
+		}
+
+		div:first-child {
+			background: purple;
+		}
+
+		div:last-child {
+			background: blue;
+		}
+
+		/* drag classes */
+		.x-dragbox-drag-over {
+			border: 2px solid #000;
+		}
+
+		.x-dragbox-drag-origin {
+			opacity: 0.5;
+		}
+
+
+	</style>
+</head>
+
+<body>
+
+	<h2>Basic Sortable</h2>
+	<x-dragbox id="dragbox" sortable="true">
+		<div draggable="true">1</div>
+		<div>2</div>
+		<div>3</div>
+		<div>4</div>
+	</x-dragbox>
+
+	<h2>Basic NonSortable</h2>
+	<x-dragbox id="dragbox2">
+		<div>5</div>
+		<div>6</div>
+		<div>7</div>
+		<div>8</div>
+	</x-dragbox>
+
+	<h2>Different Drop (inner UL)</h2>
+	<x-dragbox id="dragbox2" drop-element=".dropinme" sortable="true">
+		<ul class="dropinme">
+			<li>9</li>
+			<li>10</li>
+			<li>11</li>
+			<li>12</li>
+		</ul>
+	</x-dragbox>
+
+	<h2>Different Drop (inner UL), Only .li's draggable</h2>
+	<x-dragbox id="dragbox3" drop-element=".dropinme" drag-elements=".li" sortable="true">
+		<ul class="dropinme">
+			<li>13</li>
+			<li class="li">14</li>
+			<li class="li">15</li>
+			<li>16</li>
+		</ul>
+	</x-dragbox>
+
+	<h2>Different Drop (inner UL), Only .li's draggable, no DIVs allowed to be dragged in</h2>
+	<x-dragbox id="dragbox4" drop-element=".dropinme" drag-elements=".li" prevent-drop="div" sortable="true">
+		<ul class="dropinme">
+			<li>17</li>
+			<li class="li">18</li>
+			<li class="li">19</li>
+			<li>20</li>
+		</ul>
+	</x-dragbox>
+
+	<h2>Different Drop (inner UL), Only .li's draggable, no DIVs allowed to be dragged in, relative</h2>
+	<x-dragbox id="dragbox5" drop-element=".dropinme" drag-elements=".li" prevent-drop="div" sortable="true" drop-position="relative">
+		<ul class="dropinme">
+			<li>21</li>
+			<li class="li">22</li>
+			<li class="li">23</li>
+			<li>24</li>
+		</ul>
+	</x-dragbox>
+
+</body>
+
+</html>

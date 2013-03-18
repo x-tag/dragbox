@@ -1,0 +1,17 @@
+{	
+	"name": "Dragbox",
+	"tagName": "x-dragbox",
+	"version": "0.1.0",	
+	"description": "",
+	"images": [],	
+	"categories": ["structural"],
+	"demo": "demo/demo.html",
+	"compatibility": {	
+		"firefox": 5,
+		"chrome": 4,
+		"ie": 9,
+		"opera": 12,
+		"android": 2.1,
+		"ios": 4
+	}
+}

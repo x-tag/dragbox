@@ -1,0 +1,19 @@
+{
+  "name": "dragbox",
+  "description": "",
+  "version": "0.1.0",
+  "keywords": [    
+    "element",
+    "custom",
+    "dragdrop",
+    "draggable",
+    "x-tag"
+  ],
+  "main": [
+    "src/dragbox.js",
+    "src/sdragbox.css"
+  ],
+  "dependencies": {
+    "x-tag-core": "*"
+  }
+}
