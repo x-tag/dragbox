@@ -1,12 +1,15 @@
-{	
+{
 	"name": "Dragbox",
 	"tagName": "x-dragbox",
-	"version": "0.1.0",	
+	"version": "0.2.0",
+	"author": "David Walsh",
 	"description": "",
-	"images": [],	
-	"categories": ["structural"],
-	"demo": "demo/demo.html",
-	"compatibility": {	
+	"images": [],
+	"categories": [
+		"structural"
+	],
+	"demo": "demo/index.html",
+	"compatibility": {
 		"firefox": 5,
 		"chrome": 4,
 		"ie": 9,
